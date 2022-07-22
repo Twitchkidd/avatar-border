@@ -11,15 +11,41 @@ body {
 	padding: 0;
 	height: 100vh;
 	width: 100vw;
-	background: gray;
+	background: #14141d;
 	display: grid;
 	place-items: center;
 }
 
-img {
-	border-width: 4px;
+.card {
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	border: 8px solid blue;
+	border-radius: 200px;
+	/* border-image-slice: 1; */
+
+	/*  leverage cascade for cross-browser gradients  */
+  /* border-image-source: linear-gradient(
+    hsl(100 100% 60%),
+    50%,
+    hsl(200 100% 60%)
+  );
+  border-image-source: radial-gradient(
+    hsl(100 100% 60%),
+    75%,
+    hsl(200 100% 60%)
+  );
+  border-image-source: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%),
+    hsl(100 100% 60%)
+  ); */
+}
+
+/* img {
+	border-width: 8px;
 	border-style: solid;
-	border-radius: 60px;
+	border-radius: 200px;
 	border-image: conic-gradient(
 			var(--blue),
 			var(--purple),
@@ -28,4 +54,4 @@ img {
 		)
 		1 100%;
 	padding: 4px;
-}
+} */
